@@ -1,0 +1,16 @@
+# Pixel Art Avatar
+
+> Pixel Art Avatar (pixelartavatar.com) turns photos into chunky, 90s-style pixel art. Upload a photo, get a free watermarked preview in about two minutes, then pay to download a clean, watermark-free PNG. It is best known for pixel-art profile pictures (avatars), with a second tool for converting any photo into pixel art.
+
+## Tools
+- [Pixel art avatar generator](https://pixelartavatar.com/avatar): turn a headshot into a chunky 90s pixel-art profile picture for X/Twitter, Discord, Slack, and similar.
+- [Photo to pixel art](https://pixelartavatar.com/photo-to-pixel-art): turn any photo (landscapes, food, scenery) into 90s pixel art.
+
+## How it works
+- Upload a photo, generate a free watermarked preview, then pay to download the clean PNG.
+- Pricing: $5 per image (flat).
+
+## Legal
+- [Terms of Service](https://pixelartavatar.com/terms)
+- [Privacy Policy](https://pixelartavatar.com/privacy)
+- [Contact](https://pixelartavatar.com/contact)

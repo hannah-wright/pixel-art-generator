@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Color tokens */
+  --color-cream: #fde7d0;
+  --color-ink: #0a0a0a;
+  --color-blue: #2563eb;
+  --color-cyan: #00f5ff;
+  --color-paper: #ffffff;
+  --color-muted: #6b6b6b;
+
+  /* Fonts */
+  --font-pixel: var(--font-vt323);
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: #fde7d0;
+  --foreground: #0a0a0a;
+}
+
+body {
+  /* Warm peach + scattered Memphis-style hot-blue dots. The dot
+     pattern is subtle (8% opacity) so it reads as texture, not
+     a busy background. */
+  background-color: var(--color-cream);
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    rgba(37, 99, 235, 0.09) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 28px 28px;
+  color: var(--color-ink);
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+}
+
+/* Chunky 90s button */
+.btn-chunky {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  border: 3px solid var(--color-ink);
+  border-radius: 4px;
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  box-shadow: 2px 2px 0 0 var(--color-ink);
+  transition: transform 80ms ease, box-shadow 80ms ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-chunky:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 0 var(--color-ink);
+}
+
+.btn-chunky:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 0 var(--color-ink);
+}
+
+.btn-blue {
+  background: var(--color-blue);
+  color: var(--color-paper);
+  border-color: var(--color-ink);
+  box-shadow: 2px 2px 0 0 var(--color-ink);
+}
+
+.btn-cyan {
+  background: var(--color-cyan);
+  color: var(--color-ink);
+  border-color: var(--color-ink);
+  box-shadow: 2px 2px 0 0 var(--color-ink);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-ink);
+  border: 3px solid var(--color-ink);
+  box-shadow: 2px 2px 0 0 var(--color-ink);
+}
+
+/* Chunky card */
+.card-chunky {
+  background: var(--color-paper);
+  border: 3px solid var(--color-ink);
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 0 var(--color-ink);
+  padding: 1.5rem;
+}
+
+/* Pixel-style heading */
+.font-pixel {
+  font-family: var(--font-vt323), monospace;
+  letter-spacing: 0.01em;
+}
+
+/* Dithered hover pattern for upload zone */
+.upload-zone {
+  border: 3px dashed var(--color-ink);
+  background: var(--color-paper);
+  border-radius: 4px;
+  transition: background 120ms ease, transform 120ms ease;
+}
+
+.upload-zone:hover,
+.upload-zone.dragging {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-paper),
+    var(--color-paper) 8px,
+    #f0f0f0 8px,
+    #f0f0f0 16px
+  );
+  transform: translate(-1px, -1px);
+}
+
+/* Loading bar (dithered) */
+@keyframes loadingPulse {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 32px 0;
+  }
+}
+
+.loading-bar {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--color-ink),
+    var(--color-ink) 8px,
+    var(--color-blue) 8px,
+    var(--color-blue) 16px
+  );
+  background-size: 32px 32px;
+  animation: loadingPulse 800ms linear infinite;
+}
+
+/* Pixel scanline overlay (subtle) */
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.03),
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
