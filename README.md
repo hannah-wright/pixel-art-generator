@@ -1,6 +1,8 @@
 # Pixel Art Avatar
 
-> Turn your photo into 90s pixel art. See how it looks - free. $5 if you want to keep it.
+![Pixel Art Avatar preview](pixel-avatar-maker.png)
+
+> Turn your photo into 90s pixel art. See how it looks - free.
 >
 > Live at **pixelartavatar.com**
 
