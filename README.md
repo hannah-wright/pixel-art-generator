@@ -1,6 +1,6 @@
 # Pixel Art Avatar
 
-![Pixel Art Avatar preview](pixel-avatar-maker.png)
+![Pixel Art Avatar preview](screenshot.png)
 
 > Turn your photo into 90s pixel art. See how it looks - free.
 >
